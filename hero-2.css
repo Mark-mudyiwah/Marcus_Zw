@@ -1,0 +1,13 @@
+.hero-section{
+   height: 300px;
+}
+.hero-image-container{
+width: 100%;
+}
+
+.hero-image-container img{
+   height: 100%;
+   width: 100%;
+   object-fit: contain;
+}
+

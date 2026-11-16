@@ -1,0 +1,110 @@
+:root {
+    --primary: #32CD32;
+    --dark: #17211B;
+    --text: #647067;
+    --background: #FFFFFF;
+    --section-bg: #F3F5F3;
+    --border: #E5EAE6;
+}
+
+
+/* Skills Section */
+.skills-section {
+    padding: 100px 8%;
+    
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Skill Card */
+.skill-card {
+    background-color: #0B1120;
+    border: 1px solid #263344;
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    border-color: #32CD32;
+    transform: translateY(-5px);
+}
+
+/* Skill Icons */
+.skill-card i {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+/* Skill Names */
+.skill-card h3 {
+    color: white;
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+/* Skill Descriptions */
+.skill-card p {
+    color: #919AA5;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* Technology Brand Colors */
+
+.html-icon {
+    color: #E34F26;
+}
+
+.css-icon {
+    color: #1572B6;
+}
+
+.js-icon {
+    color: #F7DF1E;
+}
+
+.node-icon {
+    color: #339933;
+}
+
+.express-icon {
+    color: #444444;
+}
+
+.mongo-icon {
+    color: #47A248;
+}
+
+.git-icon {
+    color: #F05032;
+}
+
+.github-icon {
+    color: #181717;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-section {
+        padding: 70px 5%;
+    }
+}
