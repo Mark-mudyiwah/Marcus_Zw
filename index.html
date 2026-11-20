@@ -14,11 +14,15 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+    <link rel="stylesheet" href="./css/shared/header.css">
+    <link rel="stylesheet" href="./css/index-sections/hero.css">
+    <link rel="stylesheet" href=".//css/index-sections/main.css">
+    <link rel="stylesheet" href="./css/index-sections/skills.css">
+    <link rel="stylesheet" href="./css/index-sections/projects.css">
+    <link rel="stylesheet" href="./css/shared/aside.css">
+    <link rel="stylesheet" href="./css/shared/footer.css">
 
-    <link rel="stylesheet" href="./header.css">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./about.css">
-    <link rel="stylesheet" href="./skills.css">
+
 </head>
 
 <body>
@@ -41,14 +45,79 @@
         <!-- Navigation -->
         <nav class="main-navigation">
 
-            <a href="#about" class="nav-link">About Me</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#contact" class="nav-link">Contact</a>
+            <a href="./index.html" class="nav-link active">Home</a>
+            <a href="./projects.html" class="nav-link">Projects</a>
+            <a href="./contact.html" class="nav-link">Contact</a>
+            <a href="./contact.html#contact-form-container" class="nav-link lets-talk">Let's talk
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </nav>
+        <!--Hamburger-menu -->
+        <button class="hamburger-menu" id="hamburger-menu" aria-label="Open navigation" aria-expanded="false">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+    </header>
+
+    <aside class="aside-nav">
+
+        <!-- Profile -->
+        <div class="aside-profile">
+            <div class="aside-avatar">
+                MZ
+            </div>
+
+            <h3>Marcus<span>Zw</span></h3>
+            <p>Web Developer</p>
+        </div>
+
+        <!-- Aside Navigation -->
+        <nav class="aside-navigation">
+
+            <a href="./index.html" class="aside-link active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="./projects.html" class="aside-link">
+                <i class="fa-solid fa-code"></i>
+                <span>Projects</span>
+            </a>
+
+            <a href="./contact.html" class="aside-link">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Contact</span>
+            </a>
 
         </nav>
 
-    </header>
+        <!-- Social Links -->
+        <div class="aside-socials">
+            <p>FIND ME ON</p>
+
+            <div class="social-links">
+                <a href="#" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="#" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="aside-footer">
+            <span class="status-dot"></span>
+            Available for opportunities
+        </div>
+
+    </aside>
 
 
     <main>
@@ -103,10 +172,20 @@
                 </div>
 
                 <div class="hero-floating-card">
-                    <i class="fa-solid fa-code"></i>
-                    <div>
-                        <strong>Web Developer</strong>
-                        <span>Turning ideas into reality</span>
+                    <div class="code-card-header">
+                        <i class="fa-brands fa-js"></i>
+                        <span>developer.js</span>
+                        <span class="code-status">● Online</span>
+                    </div>
+
+                    <div class="code-content">
+                        <span class="code-purple">const</span> dev = {
+                        <p>name: <span class="code-green">"MarcusZw"</span>,</p>
+                        <p>type: <span class="code-green">"Self-Taught Junior Web Developer"</span>,</p>
+                        <p> experience: <span class="code-green">"Learning by building"</span>,</p>
+                        <p> availableForWork: <span class="code-green">true</span>,</p>
+                        <p>jobStatus: <span class="code-green">"Looking for opportunities.."</span></p>
+                        };
                     </div>
                 </div>
 
@@ -386,6 +465,27 @@
         </section>
 
     </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <a href="index.html" class="footer-logo">
+                Marcus<span>Zw</span>.
+            </a>
+
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <p class="footer-copy">
+                &copy; 2026 MarcusZw. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
 
 
 </body>

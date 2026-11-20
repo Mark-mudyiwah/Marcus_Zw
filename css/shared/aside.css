@@ -1,0 +1,160 @@
+/* Aside Navigation */
+.aside-nav {
+    position: fixed;
+    top: 70px;
+    right: 0;
+
+    width: 100%;
+    height: calc(100vh - 100px);
+
+    padding: 35px 22px;
+
+    background: #ffffff;
+    border-right: 1px solid #eeeeee;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    display: none;
+}
+
+/* Profile */
+.aside-profile {
+    text-align: center;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.aside-avatar {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f0fff0;
+    color: #32cd32;
+
+    border: 2px solid #32cd32;
+    border-radius: 50%;
+
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.aside-profile h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.aside-profile h3 span {
+    color: #32cd32;
+}
+
+.aside-profile p {
+    font-size: 13px;
+    color: #777;
+}
+
+/* Navigation */
+.aside-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-top: 35px;
+}
+
+.aside-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 13px 16px;
+
+    text-decoration: none;
+    color: #555;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.aside-link i {
+    font-size: 17px;
+    width: 20px;
+    text-align: center;
+}
+
+.aside-link:hover,
+.aside-link.active {
+    background: #efffef;
+    color: #32cd32;
+}
+
+/* Social Links */
+.aside-socials {
+    margin-top: auto;
+    padding-bottom: 25px;
+}
+
+.aside-socials p {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+}
+
+.social-links a {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #eee;
+    border-radius: 8px;
+
+    color: #444;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #32cd32;
+    color: white;
+    border-color: #32cd32;
+}
+
+/* Footer */
+.aside-footer {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+
+    font-size: 11px;
+    color: #777;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background: #32cd32;
+    border-radius: 50%;
+}

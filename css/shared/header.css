@@ -1,0 +1,147 @@
+:root {
+    --green: #32cd32;
+    --green-dark: #269e26;
+    --green-light: #effaef;
+
+    --dark: #171a17;
+    --text: #606760;
+    --muted: #929992;
+
+    --white: #ffffff;
+    --light-bg: #f8faf8;
+    --border: #e9eee9;
+
+    --shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+    --radius: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: none;
+    color: var(--white);
+    color: var(--dark);
+}
+
+
+
+/* Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    z-index: 100;
+    background-color: white;
+    color: black;
+}
+
+/* Brand */
+.site-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+}
+
+.brand-initial {
+    font-size: 38px;
+    font-weight: 700;
+    font-family: lobster;
+}
+
+.brand-initial--primary {
+    padding-bottom: 4px;
+}
+
+.brand-initial--accent {
+    color: lime;
+    padding-top: 4px;
+}
+
+.brand-name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.brand-highlight {
+    color: limegreen;
+}
+
+/* Navigation */
+.main-navigation {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 15px;
+
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: limegreen;
+}
+
+.lets-talk {
+    border: 2px solid limegreen;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.active {
+    text-decoration: underline;
+    color: #32cd32;
+}
+
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: #222;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+    transition: 0.3s ease;
+}
+
+.hamburger-menu:hover {
+    color: #32cd32;
+}
+
+@media (max-width: 768px) {
+    .main-navigation {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .brand-name {
+        display: none;
+    }
+
+}

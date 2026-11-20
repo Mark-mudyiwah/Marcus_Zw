@@ -1,0 +1,351 @@
+
+/* ==============================
+   CONTACT PAGE
+================================= */
+
+:root {
+    --primary: #32cd32;
+    --primary-dark: #25a925;
+    --dark: #151515;
+    --text: #666;
+    --light: #f7f9f6;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.contact-page {
+    background: var(--white);
+}
+
+
+/* ==============================
+   CONTACT SECTION
+================================= */
+
+.contact-section {
+    min-height: 85vh;
+    padding: 100px 8%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+
+/* ==============================
+   CONTACT INTRODUCTION
+================================= */
+
+.contact-info {
+    max-width: 550px;
+}
+
+.section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--primary-dark);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+}
+
+.section-tag span {
+    width: 30px;
+    height: 2px;
+    background: var(--primary);
+}
+
+.contact-info h1 {
+    font-size: clamp(38px, 4.5vw, 58px);
+    line-height: 1.15;
+    margin-bottom: 22px;
+    color: var(--dark);
+}
+
+.contact-info h1 span {
+    color: var(--primary-dark);
+}
+
+.contact-description {
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 480px;
+}
+
+
+/* ==============================
+   CONTACT DETAILS
+================================= */
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 40px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+
+    display: grid;
+    place-items: center;
+
+    background: #eaf9e9;
+    color: var(--primary-dark);
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.contact-detail div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contact-detail span {
+    font-size: 12px;
+    color: var(--text);
+}
+
+.contact-detail strong {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.detail-arrow {
+    margin-left: auto;
+    font-size: 12px;
+    color: #999;
+}
+
+
+/* ==============================
+   SOCIAL LINKS
+================================= */
+
+.contact-socials {
+    margin-top: 40px;
+}
+
+.contact-socials > span {
+    font-size: 13px;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    width: 42px;
+    height: 42px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+
+    color: var(--dark);
+    font-size: 17px;
+
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-4px);
+}
+
+
+/* ==============================
+   CONTACT FORM CONTAINER
+================================= */
+
+.contact-form-container {
+    background: var(--light);
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+.form-heading {
+    margin-bottom: 30px;
+}
+
+.form-heading h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.form-heading p {
+    color: var(--text);
+    font-size: 14px;
+}
+
+
+/* ==============================
+   FORM ELEMENTS
+================================= */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 7px;
+
+    background: var(--white);
+    color: var(--dark);
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px #32cd3218;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+
+/* ==============================
+   SEND BUTTON
+================================= */
+
+.send-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 100%;
+    padding: 16px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: var(--primary);
+    color: var(--dark);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.send-btn:hover {
+    background: var(--primary-dark);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+
+/* ==============================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 950px) {
+
+    .contact-section {
+        gap: 40px;
+        padding: 80px 6%;
+    }
+
+    .contact-form-container {
+        padding: 30px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .contact-section {
+        grid-template-columns: 1fr;
+        gap: 55px;
+        padding: 70px 6%;
+    }
+
+    .contact-info {
+        max-width: 100%;
+    }
+
+    .contact-info h1 {
+        font-size: 43px;
+    }
+
+    .contact-form-container {
+        padding: 25px 20px;
+    }
+
+    .form-heading h2 {
+        font-size: 22px;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .contact-info h1 {
+        font-size: 36px;
+    }
+
+    .contact-form-container {
+        padding: 22px 15px;
+    }
+
+}
