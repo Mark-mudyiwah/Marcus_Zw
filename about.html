@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="./css/shared/header.css">
     <link rel="stylesheet" href="./css/index-sections/main.css">
     <link rel="stylesheet" href="./css/pages/about.css">
+    <link rel="stylesheet" href="./css/shared/aside.css">
     <link rel="stylesheet" href="./css/shared/footer.css">
+    <link rel="stylesheet" href="./css/shared/general.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
@@ -21,7 +23,7 @@
     <header class="site-header">
 
         <!-- Brand -->
-        <a href="#" class="site-brand">
+        <a href="./index.html" class="site-brand">
 
             <div class="brand-logo">
                 <span class="brand-initial brand-initial--primary">M</span>
@@ -37,14 +39,87 @@
         <nav class="main-navigation">
 
             <a href="./index.html" class="nav-link">Home</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="./contact.html" class="nav-link">Contact</a>
-            <a href="##" class="nav-link lets-talk">Let's talk
+            <a href="./projects.html" class="nav-link">Projects</a>
+            <a href="./about.html" class="nav-link active">About Me</a>
+            <a href="./contact.html#contactForm" class="nav-link lets-talk">Let's talk
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
         </nav>
 
+        <!--Hamburger-menu -->
+        <button class="hamburger-menu" id="hamburger-menu" aria-label="Open navigation" aria-expanded="false">
+
+            <i class="fa-solid fa-bars menu-icon"></i>
+
+        </button>
+
     </header>
+
+    <aside class="aside-nav">
+
+        <!-- Profile -->
+        <div class="aside-profile">
+            <div class="aside-avatar">
+                MZ
+            </div>
+
+            <h3>Marcus<span>Zw</span></h3>
+            <p>Web Developer</p>
+        </div>
+
+        <!-- Aside Navigation -->
+        <nav class="aside-navigation">
+
+            <a href="./index.html" class="aside-link">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="./projects.html" class="aside-link">
+                <i class="fa-solid fa-code"></i>
+                <span>Projects</span>
+            </a>
+
+
+            <a href="./contact.html" class="aside-link active">
+                <i class="fa-solid fa-user"></i>
+                <span>About Me</span>
+            </a>
+
+            <a href="./contact.html" class="aside-link">
+                <i class="fa-solid fa-message"></i>
+                <span>Let's Chat</span>
+            </a>
+
+        </nav>
+
+        <!-- Social Links -->
+        <div class="aside-socials">
+            <p>FIND ME ON</p>
+
+            <div class="social-links">
+                <a href="#" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="#" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="aside-footer">
+            <span class="status-dot"></span>
+            Available for opportunities
+        </div>
+
+    </aside>
+
 
 
     <main class="about-page">
@@ -82,7 +157,7 @@
                         <i class="fa-solid fa-arrow-down"></i>
                     </a>
 
-                    <a href="#contact" class="btn-secondary">
+                    <a href="./contact.html" class="btn-secondary">
                         Let's Talk
                     </a>
                 </div>
@@ -147,7 +222,7 @@
                         I began learning through online tutorials
                         and courses, building my foundation in HTML,
                         CSS and JavaScript with resources such as
-                        SuperSimpleDev.
+                        <b>SuperSimpleDev.</b>
                     </p>
 
                     <p>
@@ -155,7 +230,7 @@
                         in what happens behind the scenes. This led
                         me into backend development, where I explored
                         Node.js, Express and MongoDB through practical
-                        learning and courses by John Smilga.
+                        learning and courses by <b>John Smilga</b>.
                     </p>
 
                     <p>
@@ -219,37 +294,37 @@
             <div class="skills-grid">
 
                 <div class="skill-card">
-                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-html5 html-icon"></i>
                     <h3>HTML5</h3>
                     <span>Structure & Semantics</span>
                 </div>
 
                 <div class="skill-card">
-                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-css3-alt css-icon"></i>
                     <h3>CSS3</h3>
                     <span>Styling & Responsive Design</span>
                 </div>
 
                 <div class="skill-card">
-                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-js js-icon"></i>
                     <h3>JavaScript</h3>
                     <span>Interactive Experiences</span>
                 </div>
 
                 <div class="skill-card">
-                    <i class="fa-brands fa-node-js"></i>
+                    <i class="fa-brands fa-node-js node-icon"></i>
                     <h3>Node.js</h3>
                     <span>Server-side Development</span>
                 </div>
 
                 <div class="skill-card">
-                    <i class="fa-solid fa-server"></i>
+                    <i class="fa-solid fa-server express-icon"></i>
                     <h3>Express.js</h3>
                     <span>Backend Development</span>
                 </div>
 
                 <div class="skill-card">
-                    <i class="fa-solid fa-database"></i>
+                    <i class="fa-solid fa-database mongo-icon"></i>
                     <h3>MongoDB</h3>
                     <span>Database Fundamentals</span>
                 </div>
@@ -334,7 +409,7 @@
                     experienced developers and grow within a team.
                 </p>
 
-                <a href="mailto:your-email@example.com" class="btn-primary">
+                <a href="mailto:marmudyiwah0@gmail.com" class="btn-primary">
                     Get In Touch
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -369,6 +444,8 @@
 
         </div>
     </footer>
+
+    <script src="./js/shared/menuToggle.js"></script>
 
 </body>
 

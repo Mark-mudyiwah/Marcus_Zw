@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/index-sections/projects.css">
     <link rel="stylesheet" href="./css/shared/aside.css">
     <link rel="stylesheet" href="./css/shared/footer.css">
+    <link rel="stylesheet" href="./css/shared/general.css">
 
 
 </head>
@@ -47,15 +48,16 @@
 
             <a href="./index.html" class="nav-link active">Home</a>
             <a href="./projects.html" class="nav-link">Projects</a>
-            <a href="./contact.html" class="nav-link">Contact</a>
-            <a href="./contact.html#contact-form-container" class="nav-link lets-talk">Let's talk
+            <a href="./about.html" class="nav-link">About Me</a>
+            <a href="./contact.html#contactForm" class="nav-link lets-talk">Let's talk
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
         </nav>
+
         <!--Hamburger-menu -->
         <button class="hamburger-menu" id="hamburger-menu" aria-label="Open navigation" aria-expanded="false">
 
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars menu-icon"></i>
 
         </button>
     </header>
@@ -85,9 +87,15 @@
                 <span>Projects</span>
             </a>
 
+
+            <a href="./about.html" class="aside-link">
+                <i class="fa-solid fa-user"></i>
+                <span>About Me</span>
+            </a>
+
             <a href="./contact.html" class="aside-link">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Contact</span>
+                <i class="fa-solid fa-message"></i>
+                <span>Let's Chat</span>
             </a>
 
         </nav>
@@ -144,17 +152,17 @@
                 </p>
 
                 <div class="hero-actions">
-                    <a href="#projects" class="btn-primary">
+                    <a href="./projects.html" class="btn-primary">
                         Explore My Work <i class="fa-solid fa-arrow-right"></i>
                     </a>
 
-                    <a href="#contact" class="btn-secondary">
+                    <a href="./contact.html#contactForm" class="btn-secondary">
                         Let's Talk
                     </a>
                 </div>
 
                 <div class="hero-socials">
-                    <a href="#" aria-label="GitHub">
+                    <a href="https://github.com/Mark-Mudyiwah" aria-label="GitHub">
                         <i class="fa-brands fa-github"></i>
                     </a>
 
@@ -220,7 +228,7 @@
                     through practical projects.
                 </p>
 
-                <a href="#contact" class="about-button">
+                <a href="./about.html" class="about-button">
                     More About Me
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -455,7 +463,7 @@
                     meaningful.
                 </p>
 
-                <a href="mailto:your-email@example.com" class="contact-button">
+                <a href="mailto:markmudyiwah0@gmail.com" class="contact-button">
                     Get In Touch
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -487,7 +495,7 @@
         </div>
     </footer>
 
-
+    <script src="./js/shared/menuToggle.js"></script>
 </body>
 
 </html>

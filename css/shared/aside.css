@@ -158,3 +158,13 @@
     background: #32cd32;
     border-radius: 50%;
 }
+
+.show{
+    display: flex;
+}
+.close-icon{
+    display: none;
+}
+.hide{
+    display: none;
+}

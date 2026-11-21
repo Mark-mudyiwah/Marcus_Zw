@@ -111,8 +111,8 @@ body {
 }
 
 .active {
-    text-decoration: underline;
     color: #32cd32;
+    font-weight: 700;
 }
 
 .hamburger-menu {

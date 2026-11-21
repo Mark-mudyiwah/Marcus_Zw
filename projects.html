@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="./css/shared/header.css">
     <link rel="stylesheet" href="./css/index-sections/main.css">
     <link rel="stylesheet" href="./css/pages/projects.css">
+    <link rel="stylesheet" href="./css/shared/aside.css">
     <link rel="stylesheet" href="./css/shared/footer.css">
+    <link rel="stylesheet" href="./css/shared/general.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
@@ -21,7 +23,7 @@
     <header class="site-header">
 
         <!-- Brand -->
-        <a href="#" class="site-brand">
+        <a href="./index.html" class="site-brand">
 
             <div class="brand-logo">
                 <span class="brand-initial brand-initial--primary">M</span>
@@ -37,301 +39,370 @@
         <nav class="main-navigation">
 
             <a href="./index.html" class="nav-link">Home</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="./contact.html" class="nav-link">Contact</a>
-            <a href="##" class="nav-link lets-talk">Let's talk
+            <a href="./projects.html" class="nav-link active">Projects</a>
+            <a href="./about.html" class="nav-link">About Me</a>
+            <a href="./contact.html#contactForm" class="nav-link lets-talk">Let's talk
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
         </nav>
+
+        <!--Hamburger-menu -->
+        <button class="hamburger-menu" id="hamburger-menu" aria-label="Open navigation" aria-expanded="false">
+
+            <i class="fa-solid fa-bars menu-icon"></i>
+
+        </button>
 
     </header>
 
+    <aside class="aside-nav">
 
-<main class="projects-page">
+        <!-- Profile -->
+        <div class="aside-profile">
+            <div class="aside-avatar">
+                MZ
+            </div>
 
-    <!-- Projects Hero -->
-    <section class="projects-hero">
+            <h3>Marcus<span>Zw</span></h3>
+            <p>Web Developer</p>
+        </div>
 
-        <div class="projects-hero-content">
+        <!-- Aside Navigation -->
+        <nav class="aside-navigation">
 
-            <span class="section-tag">
-                <span></span>
-                MY WORK
-            </span>
-
-            <h1>
-                Turning ideas into
-                <span>real projects.</span>
-            </h1>
-
-            <p>
-                A collection of projects I've designed and developed
-                while learning, experimenting and putting my skills
-                into practice.
-            </p>
-
-            <a href="#project-list" class="btn-primary">
-                Explore My Work
-                <i class="fa-solid fa-arrow-down"></i>
+            <a href="./index.html" class="aside-link">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
             </a>
 
+            <a href="./projects.html" class="aside-link  active">
+                <i class="fa-solid fa-code"></i>
+                <span>Projects</span>
+            </a>
+
+
+            <a href="./about.html" class="aside-link">
+                <i class="fa-solid fa-user"></i>
+                <span>About Me</span>
+            </a>
+
+            <a href="./contact.html" class="aside-link">
+                <i class="fa-solid fa-message"></i>
+                <span>Let's Chat</span>
+            </a>
+
+        </nav>
+
+        <!-- Social Links -->
+        <div class="aside-socials">
+            <p>FIND ME ON</p>
+
+            <div class="social-links">
+                <a href="#" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="#" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
         </div>
 
-        <div class="projects-hero-decoration">
-            <i class="fa-solid fa-code"></i>
-            <span>const projects = "building";</span>
+        <!-- Footer -->
+        <div class="aside-footer">
+            <span class="status-dot"></span>
+            Available for opportunities
         </div>
 
-    </section>
+    </aside>
+
+    <main class="projects-page">
+
+        <!-- Projects Hero -->
+        <section class="projects-hero">
+
+            <div class="projects-hero-content">
+
+                <span class="section-tag">
+                    <span></span>
+                    MY WORK
+                </span>
+
+                <h1>
+                    Turning ideas into
+                    <span>real projects.</span>
+                </h1>
+
+                <p>
+                    A collection of projects I've designed and developed
+                    while learning, experimenting and putting my skills
+                    into practice.
+                </p>
+
+                <a href="#project-list" class="btn-primary">
+                    Explore My Work
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+
+            </div>
+
+            <div class="projects-hero-decoration">
+                <i class="fa-solid fa-code"></i>
+                <span>const projects = "building";</span>
+            </div>
+
+        </section>
 
 
-    <!-- Projects List -->
-    <section class="projects-section" id="project-list">
+        <!-- Projects List -->
+        <section class="projects-section" id="project-list">
 
-        <div class="section-heading">
+            <div class="section-heading">
 
-            <div>
-                <span class="section-tag">SELECTED WORK</span>
+                <div>
+                    <span class="section-tag">SELECTED WORK</span>
+
+                    <h2>
+                        Things I've <span>built.</span>
+                    </h2>
+
+                    <p>
+                        Real projects, practical experience and
+                        lessons learned along the way.
+                    </p>
+                </div>
+
+                <span class="project-count">03 PROJECTS</span>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- Project 1: Schools of Commercials -->
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="./images/school-of-commercials-site.png" alt="Schools of Commercials website preview">
+
+                        <span class="project-category">EDUCATION</span>
+
+                        <a href="#" class="image-link" aria-label="View Schools of Commercials project">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <div class="project-title">
+                            <h3>Schools of Commercials</h3>
+                            <span class="project-number">01</span>
+                        </div>
+
+                        <p>
+                            A responsive educational website designed
+                            to showcase academic programmes, school
+                            information, examination results and
+                            student enrolment.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-links">
+
+                            <a href="#" class="project-btn primary-btn">
+                                Live Demo
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                            <a href="#" class="project-btn secondary-btn">
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 2: Conselho Moto Repairs -->
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="./images/conselho-moto-repair-site.png" alt="Conselho Moto Repairs website preview">
+
+                        <span class="project-category">BUSINESS WEBSITE</span>
+
+                        <a href="https://mark-mudyiwah.github.io/Conselho-Moto-Repairs/" class="image-link"
+                            aria-label="View Conselho Moto Repairs project">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <div class="project-title">
+                            <h3>Conselho Moto Repairs</h3>
+                            <span class="project-number">02</span>
+                        </div>
+
+                        <p>
+                            A business website for a motorcycle repair
+                            workshop, featuring service information,
+                            product displays, booking functionality
+                            and customer contact options.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-links">
+
+                            <a href="#" class="project-btn primary-btn">
+                                Live Demo
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                            <a href="#" class="project-btn secondary-btn">
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 3: Order Management System -->
+                <article class="project-card">
+
+                    <div class="project-image project-placeholder">
+
+                        <div class="placeholder-content">
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                            <span>ORDER MANAGEMENT SYSTEM</span>
+                            <small>Backend Development Project</small>
+                        </div>
+
+                        <span class="project-category">IN PROGRESS</span>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <div class="project-title">
+                            <h3>Order Management System</h3>
+                            <span class="project-number">03</span>
+                        </div>
+
+                        <p>
+                            An order tracking system designed to
+                            manage incoming orders, payment statuses,
+                            invoicing, dispatch operations and
+                            delivery workflows.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>MongoDB</span>
+                        </div>
+
+                        <div class="project-links">
+
+                            <span class="project-btn coming-soon">
+                                <i class="fa-solid fa-code"></i>
+                                Currently Building
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Closing CTA -->
+        <section class="projects-cta">
+
+            <div class="cta-content">
+
+                <span class="section-tag">HAVE AN IDEA?</span>
 
                 <h2>
-                    Things I've <span>built.</span>
+                    Let's build something
+                    <span>together.</span>
                 </h2>
 
                 <p>
-                    Real projects, practical experience and
-                    lessons learned along the way.
+                    Have a project in mind or an opportunity you'd
+                    like to discuss? I'd love to hear from you.
                 </p>
+
+                <a href="contact.html" class="btn-primary">
+                    Let's Talk
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
             </div>
 
-            <span class="project-count">03 PROJECTS</span>
+            <div class="cta-decoration">
+                <i class="fa-solid fa-laptop-code"></i>
+            </div>
 
-        </div>
+        </section>
 
+    </main>
 
-        <div class="projects-grid">
+    <footer class="site-footer">
+        <div class="footer-container">
 
-
-            <!-- Project 1: Schools of Commercials -->
-            <article class="project-card">
-
-                <div class="project-image">
-
-                    <img src="./images/school-of-commercials-site.png"
-                        alt="Schools of Commercials website preview">
-
-                    <span class="project-category">EDUCATION</span>
-
-                    <a href="#" class="image-link"
-                        aria-label="View Schools of Commercials project">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-
-                </div>
-
-                <div class="project-info">
-
-                    <div class="project-title">
-                        <h3>Schools of Commercials</h3>
-                        <span class="project-number">01</span>
-                    </div>
-
-                    <p>
-                        A responsive educational website designed
-                        to showcase academic programmes, school
-                        information, examination results and
-                        student enrolment.
-                    </p>
-
-                    <div class="project-tech">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="#" class="project-btn primary-btn">
-                            Live Demo
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-
-                        <a href="#" class="project-btn secondary-btn">
-                            <i class="fa-brands fa-github"></i>
-                            GitHub
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- Project 2: Conselho Moto Repairs -->
-            <article class="project-card">
-
-                <div class="project-image">
-
-                    <img src="./images/conselho-moto-site.png"
-                        alt="Conselho Moto Repairs website preview">
-
-                    <span class="project-category">BUSINESS WEBSITE</span>
-
-                    <a href="#" class="image-link"
-                        aria-label="View Conselho Moto Repairs project">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-
-                </div>
-
-                <div class="project-info">
-
-                    <div class="project-title">
-                        <h3>Conselho Moto Repairs</h3>
-                        <span class="project-number">02</span>
-                    </div>
-
-                    <p>
-                        A business website for a motorcycle repair
-                        workshop, featuring service information,
-                        product displays, booking functionality
-                        and customer contact options.
-                    </p>
-
-                    <div class="project-tech">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="#" class="project-btn primary-btn">
-                            Live Demo
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-
-                        <a href="#" class="project-btn secondary-btn">
-                            <i class="fa-brands fa-github"></i>
-                            GitHub
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- Project 3: Order Management System -->
-            <article class="project-card">
-
-                <div class="project-image project-placeholder">
-
-                    <div class="placeholder-content">
-                        <i class="fa-solid fa-boxes-stacked"></i>
-                        <span>ORDER MANAGEMENT SYSTEM</span>
-                        <small>Backend Development Project</small>
-                    </div>
-
-                    <span class="project-category">IN PROGRESS</span>
-
-                </div>
-
-                <div class="project-info">
-
-                    <div class="project-title">
-                        <h3>Order Management System</h3>
-                        <span class="project-number">03</span>
-                    </div>
-
-                    <p>
-                        An order tracking system designed to
-                        manage incoming orders, payment statuses,
-                        invoicing, dispatch operations and
-                        delivery workflows.
-                    </p>
-
-                    <div class="project-tech">
-                        <span>JavaScript</span>
-                        <span>Node.js</span>
-                        <span>Express.js</span>
-                        <span>MongoDB</span>
-                    </div>
-
-                    <div class="project-links">
-
-                        <span class="project-btn coming-soon">
-                            <i class="fa-solid fa-code"></i>
-                            Currently Building
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- Closing CTA -->
-    <section class="projects-cta">
-
-        <div class="cta-content">
-
-            <span class="section-tag">HAVE AN IDEA?</span>
-
-            <h2>
-                Let's build something
-                <span>together.</span>
-            </h2>
-
-            <p>
-                Have a project in mind or an opportunity you'd
-                like to discuss? I'd love to hear from you.
-            </p>
-
-            <a href="contact.html" class="btn-primary">
-                Let's Talk
-                <i class="fa-solid fa-arrow-right"></i>
+            <a href="index.html" class="footer-logo">
+                Marcus<span>Zw</span>.
             </a>
 
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <p class="footer-copy">
+                &copy; 2026 MarcusZw. All rights reserved.
+            </p>
+
         </div>
-
-        <div class="cta-decoration">
-            <i class="fa-solid fa-laptop-code"></i>
-        </div>
-
-    </section>
-
-</main>
-
-<footer class="site-footer">
-    <div class="footer-container">
-
-        <a href="index.html" class="footer-logo">
-            Marcus<span>Zw</span>.
-        </a>
-
-        <nav class="footer-nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-
-        <p class="footer-copy">
-            &copy; 2026 MarcusZw. All rights reserved.
-        </p>
-
-    </div>
-</footer>
+    </footer>
 
 
+    <script src="./js/shared/menuToggle.js"></script>
 </body>
 
 </html>
