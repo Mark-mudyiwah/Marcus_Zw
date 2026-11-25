@@ -21,6 +21,10 @@ if (hamburgerMenu && aside && menuIcon) {
             isOpen ? 'Close navigation' : 'Open navigation'
         );
 
+           document.body.style.overflow = isOpen ? 'hidden' : '';
+
     });
+
+    
 
 }

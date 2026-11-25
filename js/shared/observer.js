@@ -1,13 +1,22 @@
-const target = document.querySelector('.about-section')
 
-const observer = new IntersectionObserver((entries)=>{
+const revealElements = document.querySelectorAll('.reveal');
 
-entries.forEach((entry)=>{
-    if(entry.isIntersecting){
-        entry.target.classList.add('reveal')
-    }
-})
+const observer = new IntersectionObserver((entries) => {
 
-})
+    entries.forEach((entry) => {
 
-observer.observe(target)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        } else {
+            entry.target.classList.remove('active');
+        }
+
+    });
+
+}, {
+    threshold: 0.15
+});
+
+revealElements.forEach((element) => {
+    observer.observe(element);
+});
